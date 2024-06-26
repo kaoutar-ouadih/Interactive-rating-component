@@ -11,4 +11,17 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'interactive-rating-component';
+  selectedRating: number;
+  isSubmited: boolean = false;
+
+  onRatingClick(rating: number){
+    this.selectedRating = rating;
+  }
+
+  onSubmit(){
+    if(this.selectedRating){
+      this.isSubmited = true;
+      console.log(this.isSubmited);
+    }
+  }
 }

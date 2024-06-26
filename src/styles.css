@@ -1,1 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+*, ::before, ::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    /* Colors */
+
+    /* Primary */
+    --Orange: hsl(25, 97%, 53%);
+
+    /* Neutral */
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+    --medium-blue:#1f2630;
+}
+ul{
+    list-style: none;
+}
+body{
+    font-family: "Overpass", sans-serif;
+    color: white;
+}
+a{
+    color: var(--Light-Grey);
+}
